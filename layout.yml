@@ -1,0 +1,47 @@
+Title:
+  extends: title # from hand.yml
+  font: ChunkFive Roman,Sans 58
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
+
+Art:
+  extends: art
+
+Description:
+  extends: description # from hand.yml
+  font: Sans 36
+  color: '#F3EFE3'
+  align: center
+
+Snark:
+  extends: snark # from hand.yml
+  font: Sans italic 18
+  align: center
+  valign: middle
+  color: '#F3EFE3'
+
+Attack:
+  extends: bonus1 # from hand.yml
+  font: ChunkFive Roman,Sans 48
+  color: '#F3EFE3'
+  y: += 70
+AttackIcon:
+  extends: bonus1 # from hand.yml
+  x: += 40
+  width: -= 40
+  height: -= 40
+
+Defend:
+  extends: Attack
+  y: += 200
+DefendIcon:
+  extends: AttackIcon
+  y: += 200
+
+Health:
+  extends: Defend
+  y: += 200
+HealthIcon:
+  extends: DefendIcon
+  y: += 200
