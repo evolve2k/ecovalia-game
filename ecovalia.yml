@@ -1,6 +1,6 @@
 Title:
   extends: title # from hand.yml
-  font: ChunkFive Roman, Sans 58
+  font: ChunkFive Roman,Sans 58
   color: '#F3EFE3'
   align: center
   spacing: -15
@@ -8,14 +8,14 @@ Title:
 Art:
   extends: art
 
-Category:
-  extends: description # from hand.yml
+# Category:
+# 	extends: description # from hand.yml
 
-Instructions:
-  extends: Category # from hand.yml
-  y: += 70
-  color: '#F3EFE3'
-  align: center
+# Instructions:
+#   extends: Category # from hand.yml
+#   y: += 70
+#   color: '#F3EFE3'
+#   align: center
 
 Facts:
   extends: snark # from hand.yml
