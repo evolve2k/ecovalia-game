@@ -15,7 +15,6 @@ Instructions:
   extends: Category # from hand.yml
   y: += 70
   color: '#F3EFE3'
-  align: center
 
 Facts:
   extends: snark # from hand.yml

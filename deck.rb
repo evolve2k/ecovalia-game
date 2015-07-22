@@ -5,9 +5,10 @@ dark = '#230602'
 
 # Fauna
 Squib::Deck.new(cards: 4, layout: %w(hand.yml layout.yml)) do
+	background color: 'brown'
   deck = xlsx(file: 'data/fauna.xlsx')
   svg file: deck['Art'], layout: 'Art'
-  background color: 'brown'
+  
   %w(Title Category Instructions Facts).each do |key|
     text str: deck[key], layout: key
   end
