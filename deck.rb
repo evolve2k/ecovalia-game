@@ -1,46 +1,95 @@
 require 'squib'
 
-light = '#F3EFE3'
-dark = '#230602'
+fauna_color 		 = 'brown'  # brown
+flora_color 		 = 'green'  # green
+facilities_color = 'blue'   # blue
+goodnews_color   = 'yellow' # yellow
+emergency_color  = 'red'    # red
 
-# Fauna
-Squib::Deck.new(cards: 4, layout: %w(hand.yml layout.yml)) do
-	background color: 'brown'
-  deck = xlsx(file: 'data/fauna.xlsx')
+
+##### Fauna Cards ########################################################
+
+Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
+	deck_name = "fauna"
+	background color: fauna_color
+
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
   svg file: deck['Art'], layout: 'Art'
-  
   %w(Title Category Instructions Facts).each do |key|
     text str: deck[key], layout: key
   end
-  save_png prefix: 'fauna_'
-  showcase file: 'fauna_showcase.png', fill_color: '#0000'
-  hand file: 'fauna_hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
+
+  save_pdf file: "#{deck_name}-cards.pdf",
+			 width: "8.27in", height: "11.69in", 
+			 margin: 75, gap: 5, trim: 37
 end
 
-# Facilities
+##### Flora Cards ########################################################
 
-# Squib::Deck.new(cards: 4, layout: %w(hand.yml layout.yml)) do
-#   deck = xlsx(file: 'data/facilities.xlsx')
-#   svg file: deck['Art'], layout: 'Art'
-#   background color: 'purple'
-#   %w(Title Category Instructions Facts).each do |key|
-#     text str: deck[key], layout: key
-#   end
-#   save_png prefix: 'facilities_'
-#   showcase file: 'showcase.png', fill_color: '#0000'
-#   hand file: 'hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
-# end
+Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
+	deck_name = "flora"
+	background color: flora_color
 
-# # Emergency
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
+  svg file: deck['Art'], layout: 'Art'
+  %w(Title Category Instructions Facts).each do |key|
+    text str: deck[key], layout: key
+  end
 
-# Squib::Deck.new(cards: 4, layout: %w(hand.yml layout.yml)) do
-#   deck = xlsx(file: 'data/emergency.xlsx')
-#   svg file: deck['Art'], layout: 'Art'
-#   background color: 'red'
-#   %w(Title Category Instructions Facts).each do |key|
-#     text str: deck[key], layout: key
-#   end
-#   save_png prefix: 'emergency_'
-#   showcase file: 'showcase.png', fill_color: '#0000'
-#   hand file: 'hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
-# end
+  save_pdf file: "#{deck_name}-cards.pdf",
+			 width: "8.27in", height: "11.69in", 
+			 margin: 75, gap: 5, trim: 37
+end
+
+
+##### Facilities Cards ####################################################
+
+Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
+	
+	deck_name = "facilities"
+	background color: facilities_color
+
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
+  svg file: deck['Art'], layout: 'Art'
+  %w(Title Category Instructions Facts).each do |key|
+    text str: deck[key], layout: key
+  end
+
+  save_pdf file: "#{deck_name}-cards.pdf",
+			 width: "8.27in", height: "11.69in", 
+			 margin: 75, gap: 5, trim: 37
+end
+
+##### Emergency Cards #####################################################
+
+Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
+	deck_name = "emergency"
+	background color: emergency_color
+
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
+  svg file: deck['Art'], layout: 'Art'
+  %w(Title Category Instructions Facts).each do |key|
+    text str: deck[key], layout: key
+  end
+
+  save_pdf file: "#{deck_name}-cards.pdf",
+			 width: "8.27in", height: "11.69in", 
+			 margin: 75, gap: 5, trim: 37
+end
+
+##### Good News Cards #####################################################
+
+Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
+	deck_name = "goodnews"
+	background color: goodnews_color
+
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
+  svg file: deck['Art'], layout: 'Art'
+  %w(Title Category Instructions Facts).each do |key|
+    text str: deck[key], layout: key
+  end
+
+  save_pdf file: "#{deck_name}-cards.pdf",
+			 width: "8.27in", height: "11.69in", 
+			 margin: 75, gap: 5, trim: 37
+end
