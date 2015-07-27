@@ -21,7 +21,7 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
-			 margin: 75, gap: 5, trim: 37
+			 margin: 75, gap: 1, trim: 37
 end
 
 ##### Flora Cards ########################################################
@@ -38,7 +38,7 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
-			 margin: 75, gap: 5, trim: 37
+			 margin: 75, gap: 1, trim: 37
 end
 
 
@@ -57,7 +57,7 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
-			 margin: 75, gap: 5, trim: 37
+			 margin: 75, gap: 1, trim: 37
 end
 
 ##### Emergency Cards #####################################################
@@ -74,7 +74,7 @@ Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
-			 margin: 75, gap: 5, trim: 37
+			 margin: 75, gap: 1, trim: 37
 end
 
 ##### Good News Cards #####################################################
@@ -91,5 +91,5 @@ Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
-			 margin: 75, gap: 5, trim: 37
+			 margin: 75, gap: 1, trim: 37
 end
