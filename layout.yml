@@ -10,6 +10,7 @@ Art:
 
 Category:
   extends: description # from hand.yml
+  align: center
 
 Instructions:
   extends: Category # from hand.yml

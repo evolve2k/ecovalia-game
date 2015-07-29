@@ -8,22 +8,22 @@
 # Based on TheGameCrafter.com's Poker Card, which is 825x1125
 # Sample usage is found in samples/layouts.rb
 title:
-  x: 275
+  x: 175
   y: 75
   width: 475
   height: 125
 art:
-  x: 275
+  x: 175
   y: 225
   width: 475
   height: 475
 description:
-  x: 275
+  x: 175
   y: 725
   width: 475
   height: 200
 snark:
-  x: 275
+  x: 175
   y: 950
   width: 475
   height: 100
