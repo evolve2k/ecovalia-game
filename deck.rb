@@ -17,8 +17,8 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
   svg file: deck['Art'], layout: 'Art'
   text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
   text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
-  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 32'
-  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans Heavy 18'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
@@ -35,8 +35,8 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
   svg file: deck['Art'], layout: 'Art'
   text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
   text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
-  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 32'
-  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans Heavy 18'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
@@ -46,7 +46,7 @@ end
 
 ##### Facilities Cards ####################################################
 
-Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
+Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
 	
 	deck_name = "facilities"
 	background color: facilities_color
@@ -55,8 +55,8 @@ Squib::Deck.new(cards: 18, layout: %w(hand.yml layout.yml)) do
   svg file: deck['Art'], layout: 'Art'
   text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
   text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
-  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 32'
-  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans Heavy 18'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
@@ -73,8 +73,8 @@ Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
   svg file: deck['Art'], layout: 'Art'
   text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
   text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
-  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 32'
-  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans Heavy 18'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
@@ -91,8 +91,8 @@ Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
   svg file: deck['Art'], layout: 'Art'
   text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
   text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
-  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 32'
-  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans Heavy 18'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
   save_pdf file: "#{deck_name}-cards.pdf",
 			 width: "8.27in", height: "11.69in", 
@@ -101,17 +101,18 @@ end
 
 ##### Management Cards #####################################################
 
-# Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
-#   deck_name = "management"
-#   background color: management_color
+Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
+  deck_name = "management"
+  background color: management_color
 
-#   deck = xlsx(file: "data/#{deck_name}.xlsx")
-#   svg file: deck['Art'], layout: 'Art'
-#   %w(Title Category Instructions Facts).each do |key|
-#     text str: deck[key], layout: key, font: 'Fira Sans 72'
-#   end
+  deck = xlsx(file: "data/#{deck_name}.xlsx")
+  svg file: deck['Art'], layout: 'Art'
+  text str: deck["Category"], layout: "Category", font: 'Fira Sans Heavy 72'
+  text str: deck["Title"], layout: "Title", font: 'Fira Sans 36'
+  text str: deck["Instructions"], layout: "Instructions", font: 'Fira Sans 24'
+  text str: deck["Facts"], layout: "Facts", font: 'Fira Sans 18'
 
-#   save_pdf file: "#{deck_name}-cards.pdf",
-#        width: "8.27in", height: "11.69in", 
-#        margin: 75, gap: 1, trim: 37
-# end
+  save_pdf file: "#{deck_name}-cards.pdf",
+       width: "8.27in", height: "11.69in", 
+       margin: 75, gap: 1, trim: 37
+end
