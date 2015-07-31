@@ -18,10 +18,13 @@ Find us online
 --------------
 
 [ecovaliagame.com](http://ecovaliagame.com)
+
 [facebook.com/ecovaliagame](http://facebook.com/ecovaliagame)
+
 [twitter.com/ecovaliagame](http://twitter.com/ecovaliagame)
 
 You can watch our GovHack submission video explaining the concept here:
+
 [youtube.com/watch?v=nxVwKvEBytA](https://www.youtube.com/watch?v=nxVwKvEBytA)
 
 
@@ -35,8 +38,7 @@ Please note Park boards were created outside of this code base.
 
 1. Install required fonts
 ----------------------
-Ecovalia uses the free open source "Fira Sans" font created by Mozilla.
-(https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface)
+Ecovalia uses the free open source ["Fira Sans" font created by Mozilla](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface).
 
 You will need to install the font into your system for it to run.
 Fira Sans is identifiable by it's unique 'K' which looks like a arrow leaning against an 'l'.
@@ -50,8 +52,17 @@ open a window asking you to save it into your system fonts.
 ---------------------------------
 
   1. Ensure ruby is installed (open a github issue if you have problems)
-  2. $ bundle install      # install the required gem packages
-  3. $ ruby deck.rb        # generates new cards into '_OUTPUT' folder
+  2. Install ruby gems
+
+      $ bundle install      # install the required gem packages
+
+      You may also need to do some brewing and the do the bundle install again.
+
+      $ brew install (whatever brew plugin is missing)
+
+  3. Regenerate the deck
+
+      $ ruby deck.rb        # generates new cards into '_OUTPUT' folder
 
 Modifying the Deck
 -------------------
