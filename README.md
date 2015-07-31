@@ -17,13 +17,12 @@ Check out ABOUT.md for more details on the game and how it is played.
 Find us online
 --------------
 
-(ecovaliagame.com)[http://ecovaliagame.com]
-
-(facebook.com/ecovaliagame) [http://facebook.com/ecovaliagame]
-(twitter.com/ecovaliagame) [http://twitter.com/ecovaliagame]
+[ecovaliagame.com](http://ecovaliagame.com)
+[facebook.com/ecovaliagame](http://facebook.com/ecovaliagame)
+[twitter.com/ecovaliagame](http://twitter.com/ecovaliagame)
 
 You can watch our GovHack submission video explaining the concept here:
-https://www.youtube.com/watch?v=nxVwKvEBytA
+[youtube.com/watch?v=nxVwKvEBytA](https://www.youtube.com/watch?v=nxVwKvEBytA)
 
 
 Developer Notes
