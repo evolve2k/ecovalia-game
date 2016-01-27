@@ -3,9 +3,9 @@ require 'squib'
 fauna_color 		 = '#74002f'  # maroon
 flora_color 		 = '#387228'  # green
 facilities_color = '#006a7e'  # teal
-goodnews_color   = '#f0c600'  # yellow
-emergency_color  = '#db5800'  # orange
-management_color = '#005077'  # blue
+goodnews_color   = '#964fb7'  # yellow
+emergency_color  = '#e92c48'  # red  
+management_color = '#db5800'  # orange
 
 ##### Fauna Cards ########################################################
 
@@ -101,7 +101,7 @@ end
 
 ##### Management Cards #####################################################
 
-Squib::Deck.new(cards: 9, layout: %w(hand.yml layout.yml)) do
+Squib::Deck.new(cards: 6, layout: %w(hand.yml layout.yml)) do
   deck_name = "management"
   background color: management_color
 
