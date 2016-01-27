@@ -31,7 +31,7 @@ You can watch our GovHack submission video explaining the concept here:
 Developer Notes
 ===============
 
-These instructions are for if you want to enhance the game and 
+These instructions are for if you want to enhance the game and
 need to regenerate a deck.
 
 Please note Park boards were created outside of this code base.

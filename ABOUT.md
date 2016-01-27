@@ -4,7 +4,8 @@ Ecovalia - The National Parks Card Game
 Ecovalia is a print-and-play card game first conceived at GovHack Unleashed 2015 by a team of students at @TorrensUni going by the name Torrange Juice.
 
 You can watch our GovHack submission video explaining the concept here:
-[Link to Youtube Video]
+
+https://www.youtube.com/embed/nxVwKvEBytA
 
 Objective
 ---------
@@ -36,10 +37,4 @@ To play the game you will need to print out the game assets.
 
 
 
-1. 
-
-
-
-
-
-
+1.
